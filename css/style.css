@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap);
+@font-face {
+	font-family: CalSans;
+	font-display: swap;
+	src: url("../fonts/CalSans-SemiBold.woff2") format("woff2"), url("../fonts/CalSans-SemiBold.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;/*--мы не нашли этот шрифо в googlefonts, поэтому подключали так-*/
+}
+*, *::before, *::after{
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+	min-width: 320px;
+}
+body{
+	line-height: 1;
+	font-family: Poppins;
+	color: #666666;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+/*----------------------------*/
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+/*-----------------------------*/
+
+.title{
+	font-family: CalSans;
+	color: #121212;
+	text-align: center;
+	font-size: 44px;
+	line-height: 1.2;
+}
+.title span{
+	color: #FF6428;
+}
+@media (max-width: 767.98px) {
+	.title {
+		font-size: 38px;
+	}
+}
+/*-----------------------------*/
+.page{
+	flex: 1 1 auto;/*--позволяем блоку Main прижимать футер к низу--*/
+}
+
+
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+/*------------------------------------------------------*/
+
+.header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+}
+.header__container{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: flex;
+	gap: 131px;
+	align-items: center;
+	min-height: 152px;
+}
+.header__logo{}
+.header__menu menu{}
+
+.menu {
+	padding: 10px 15px 10px 0px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menu__list{
+	display: flex;
+	column-gap: 56px;
+	row-gap: 10px;
+	flex-wrap: wrap;
+}
+.menu__item{}
+.menu__link{
+	color: rgba(18, 18, 18, 0.4);
+	font-weight: 500;
+
+}
+.menu__link:hover{
+	text-decoration: underline;
+}
+
+@media (max-width: 1092px) {
+	.header__container {
+		gap: 50px;
+		min-height: 100px;
+	}
+	.menu__list {
+		gap: 40px;
+	}
+}
+@media (max-width: 767.98px) {
+	.header__container {
+		min-height: 65px;
+	}
+}
+@media (max-width: 479.98px) {
+	.header__container {
+		gap: 15px;
+	}
+	.menu {
+		padding: 0px;
+	}	
+	.menu__list {
+		column-gap: 20px;
+	}
+	.header__logo {
+		width: 28px;
+		flex: 0 0 28px;
+		overflow: hidden;
+	}
+}
+
+/*----------------------------------------------*/
+
+
+
+
+
+
+
+
