@@ -1,103 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<title>Film-player</title>
 </head>
 <body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
-				<a href="" class="header__logo"><img src="" alt="Logo"></a>
-				<nav class="header__menu menu">
-					<ul class="menu__list">
-						<li class="menu__item">
-							<a href="" class="menu__link">Home</a></li>
-						<li class="menu__item">
-							<a href="" class="menu__link">Films</a></li>
-						<li class="menu__item">
-							<a href="" class="menu__link">TV Shows</a></li>							
-					</ul>
-				</nav> 
-			</div>
-		</header>
-		<main class="page">
-			<section class="page__main main">
-				
-			</section>
-
-		</main>
-		<footer class="footer">
-			<div class="footer__container">
-				<div class="footer__body body-footer">
-					<div class="body-footer__column">
-						<a href="" class="body-footer__logo">
-							<img src="img/footer/logo.svg" alt="Footer Logo">
-						</a>
-						<ul class="body-footer__contacts contacts-footer">
-							<li class="contacts-footer__item">
-								<a href="mailto:enquiry@Film-player.com" class="contacts-footer__link contacts-footer__link_mail">Enquiry@film_player.com</a>
-							</li>
-							<li class="contacts-footer__item">
-								<a href="#" class="contacts-footer__link contacts-footer__link_location">San Francisco</a>
-							</li>
-						</ul>
-					</div>
-					<div class="body-footer__column body-footer__column_full">
-						<nav class="body-footer__menu menu-footer">
-							<div class="menu-footer__column">
-								<div class="menu-footer__title">Pages</div>
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Store</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Collections</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Support</a>
-									</li>
-								</ul>
-							</div>
-							<div class="menu-footer__column">
-								<div class="menu-footer__title">Product</div>
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Terms</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Privacy Policy</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="" class="menu-footer__link">Copyright</a>
-									</li>
-								</ul>
-							</div>
-						</nav>
-					</div>
-					<div class="body-footer__column">
-						<div class="body-footer__social social-footer">
-							<div class="social-footer__title">Follow us</div>
-							<div class="social-footer__items">
-								<a href="" class="social-footer__item">
-									<img src="img/footer/social/01.svg" alt="">
-								</a>
-								<a href="" class="social-footer__item">
-									<img src="img/footer/social/02.svg" alt="">
-								</a>
-								<a href="" class="social-footer__item">
-									<img src="img/footer/social/03.svg" alt="">
-								</a>
-							</div>
-						</div>
+	<header class="header">
+		<div class="header-content">
+			<a href="index.html" class="header__logo">MovieApp</a>
+		</div>
+		<form>
+			<input type="text" class="header__search" placeholder="Поиск">
+		</form>
+	</header>
+	<div class="container">
+		<div class="movies">
+			<div class="movie">
+				<div class="movie__cover-inner">
+					<img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/79826c1e-255d-4558-bd5f-8a21eb89f846/600x900" alt="" class="movie_cover">
+					<div class="movie__cover--darkened"></div>
+					<div class="movie__info">
+						<div class="movie__title">Кэрри</div>
+						<div class="movie__category">ужасы</div>
+						<div class="movie__average movie__average--green">7,2</div>
 					</div>
 				</div>
-				<div class="footer__copy">© 2024 Copyright.Film-player</div>
 			</div>
-		</footer>
+		</div>
 	</div>
 	<script src="js/script.js"></script>
 </body>
