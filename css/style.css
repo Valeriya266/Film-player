@@ -48,7 +48,7 @@ body{
 
 .movie__cover-inner {
 	position: relative;
-	height: 360px;
+	height: 360px;;
 }
 
 .movie__cover {
@@ -78,7 +78,7 @@ body{
 }
 
 .movie__title {
-	font-style: 16px;
+	font-size: 16px;
 	color: #ffffff;
 }
 

@@ -33,6 +33,4 @@ function showMovies(data) {
         `;
         moviesEl.appendChild(movieEl);
     });
-
-
 }
