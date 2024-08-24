@@ -6,7 +6,7 @@ getMovies(API_KEY_POPULAR);
 async function getMovies(url) {
     const resp = await fetch(url, {
         headers: {
-            "Content-type": "application/json",
+            "Content-Type": "application/json",
             "X-API-KEY": API_KEY,
         },
     });
@@ -22,8 +22,12 @@ function showMovies(data) {
         movieEl.classList.add('movie');
         movieEl.innerHTML = `
 		    <div class="movie__cover-inner">
-				<img src="${movie.posterUrlPreview}" alt="${movie.nameRu}" class="movie__cover">
+				<img 
+                src="${movie.posterUrlPreview}" 
+                alt="${movie.nameRu}" 
+                class="movie__cover">
 				<div class="movie__cover--darkened"></div>
+            </div>    
 				<div class="movie__info">
 					<div class="movie__title">${movie.nameRu}</div>
 					<div class="movie__category">${movie.genres.map((genre) => ` ${genre.genre}`)}</div>
