@@ -21,11 +21,11 @@ async function getMovies(url) {
   function getClassByRate(vote) {
     if (vote >= 7) {
       return "green";
-    } else if (vote > 5) {
+    } else if (vote > 5 && vote < 7) {
       return "orange";
-    } else {
+    } else if (vote <= 5) {
       return "red";
-    }
+    } 
   }
   
   function showMovies(data) {
@@ -52,8 +52,7 @@ async function getMovies(url) {
             (genre) => ` ${genre.genre}`
           )}</div>
           ${
-            movie.ratingKinopoisk
-             &&
+            movie.ratingKinopoisk &&
             `
           <div class="movie__average movie__average--${getClassByRate(
             movie.ratingKinopoisk
